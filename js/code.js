@@ -3,6 +3,21 @@ $(document).ready(function () {
     // init animations
     new WOW().init();
 
+    // navbar button
+    $('.first-button').on('click', function () {
+
+        $('.animated-icon1').toggleClass('open');
+    });
+    $('.second-button').on('click', function () {
+
+        $('.animated-icon2').toggleClass('open');
+    });
+    $('.third-button').on('click', function () {
+
+        $('.animated-icon3').toggleClass('open');
+    });
+
+
     // tooltip init
     $('[data-toggle="tooltip"]').tooltip()
 
@@ -10,8 +25,7 @@ $(document).ready(function () {
 });
 
 
-function loadData()
-{
+function loadData() {
     const info = {
         name: "Lautaro Cepeda",
         email: "lautac29@gmail.com",
@@ -19,7 +33,7 @@ function loadData()
         birthday: "08/06/1995",
         city: "Argentina - Mendoza",
         occupation: "Estudiante",
-        description: 
+        description:
             "Waiting for the sun",
         social: {
             linkedin: "lautarocrodriguez",
