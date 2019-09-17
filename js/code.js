@@ -18,11 +18,14 @@ $(document).ready(function () {
     });
 
 
+
+
     // tooltip init
     $('[data-toggle="tooltip"]').tooltip()
 
     loadData();
 });
+
 
 
 function loadData() {
