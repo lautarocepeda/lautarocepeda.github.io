@@ -23,7 +23,7 @@ $(document).ready(function ()
         $('.animated-icon3').toggleClass('open');
     });
 
-    $(".copyElement").on('click', function(e)
+    $(".copyElement").mousedown(function(e)
     {
         const copy = new String(e.currentTarget.innerText);
 
